@@ -30,7 +30,7 @@ export const MyNewCommand = {
           if (isOk) {
             runApplescript({script: `display notification "${meal.meal}"`});
           }
-          await sleep(1000);
+          sleep(1000);
         });
         console.log(err || data);
     });
